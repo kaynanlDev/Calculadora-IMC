@@ -13,18 +13,17 @@
 <body>
     <div class="container">
         <h1>Calculadora IMC</h1>
-
         <form action="#">
             <div class="form-controls">
                 <div class="form-inputs">
-                    <label for="altura"></label>
+                    <label for="altura">Altura</label>
                     <input type="text" id="altura" name="altura" placeholder="Exemplo 1.50">
-                    <label for="peso"></label>
+                    <label for="peso">Peso:</label>
                     <input type="text" id="peso" name="peso" placeholder="Exemplo 60.5">
                 </div>
                 <div class="form-buttons">
-                    <input type="submit" value="Calcular">
-                    <input type="button" value="limpar">
+                    <input id="calcular" type="submit" value="Calcular">
+                    <input id="limpar" type="button" value="limpar">
                 </div>
             </div>
         </form>
@@ -34,7 +33,7 @@
             <h3>Situação atual: <span></span></h3>
             <h4>confira as classificações</h4>
 
-            <table>
+            <table >
                 <thead>
                     <th>IMC</th>
                     <th>classificação</th>
