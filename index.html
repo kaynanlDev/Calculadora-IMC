@@ -14,13 +14,14 @@
     <div class="container">
         <h1>Calculadora IMC</h1>
         <form action="#">
-            <div class="form-controls">
+            <div id="form-controls">
                 <div class="form-inputs">
-                    <label for="altura">Altura</label>
+                    <label for="altura">Altura:</label>
                     <input type="text" id="altura" name="altura" placeholder="Exemplo 1.50">
                     <label for="peso">Peso:</label>
                     <input type="text" id="peso" name="peso" placeholder="Exemplo 60.5">
                 </div>
+                <span id="erro">Ops! Parece que você esquecer de preencher algo.</span>
                 <div class="form-buttons">
                     <input id="calcular" type="submit" value="Calcular">
                     <input id="limpar" type="button" value="limpar">
@@ -28,9 +29,8 @@
             </div>
         </form>
 
-        <div class="container-result">
-            <h2>Seu IMC: <span></span></h2>
-            <h3>Situação atual: <span></span></h3>
+        <div id="container-result">
+            <h2>Seu IMC: <span id="imc-result"></span></h2>
             <h4>confira as classificações</h4>
 
             <table>
@@ -69,7 +69,7 @@
                     </tr>
                 </tbody>
             </table>
-            <div class="close"><img src="assets/img/close.svg" alt="close"></div>
+            <div id="close"><img src="assets/img/close.svg" alt="close"></div>
         </div>
     </div>
 </body>
